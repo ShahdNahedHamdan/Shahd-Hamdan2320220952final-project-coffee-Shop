@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقهى ومحمصة الخان | اتصل بنا</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">مقهى الخان <span><sup>Cafe</sup></span></div>
+        <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">☰</button>
+        <nav class="nav-links" id="navLinks">
+            <a href="finalproject.html">الرئيسية</a>
+            <a href="finalproject.html#story">قصتنا</a>
+            <a href="menu.html">قائمة المشروبات</a>
+            <a href="contact.html" class="active">اتصل بنا</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-page-container">
+            <div class="cyber-form-wrapper">
+                <h2>ابق على اتصال</h2>
+                <form action="#" method="POST" class="main-cyber-form">
+                    <div class="input-row">
+                        <div class="form-item">
+                            <label for="fullName">الاسم</label>
+                            <input type="text" id="fullName" name="fullName" required placeholder="أدخل اسمك الكريم">
+                        </div>
+                        <div class="form-item">
+                            <label for="emailInput">البريد الإلكتروني <span class="req-label">(مطلوب - نوع "email")</span></label>
+                            <input type="email" id="emailInput" name="emailInput" required placeholder="name@example.com">
+                        </div>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="inquiryType">نوع الاستفسار</label>
+                        <select id="inquiryType" name="inquiryType">
+                            <option value="" disabled selected>الرجاء اختيار استفسار</option>
+                            <option value="حجز مساحة عمل">حجز مساحة عمل ودراسة</option>
+                            <option value="استفسار عن القهوة">استفسار عن الحبوب والمحمصة</option>
+                            <option value="اقتراح أو مراجعة">تقديم اقتراح تطويري</option>
+                        </select>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="msgContent">تفاصيل الرسالة</label>
+                        <textarea id="msgContent" name="msgContent" rows="4" required placeholder="اكتب استفسارك أو رسالتك هنا..."></textarea>
+                    </div>
+
+                    <div class="form-action">
+                        <button type="submit" class="btn-form-submit">إرسال</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>© 2026 مقهى الخان | التميز الفلسطيني الغزي</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
